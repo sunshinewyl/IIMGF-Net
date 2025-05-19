@@ -22,12 +22,12 @@ VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). R
      
 # Training & Testing
 
-Train our model IIMGF-Net, please run:
+Train model IIMGF-Net, please run:
 
 
     `python train.py --dir_release your/dataset/path --epochs 100 --batch_size 32 --learning_rate 1e-4`
 
-Test our model IIMGF-Net, please run:
+Test model IIMGF-Net, please run:
 
     `python main.py --dir_release your/dataset/path ----model_path your/weight/model`
      
