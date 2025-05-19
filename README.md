@@ -30,7 +30,3 @@ Train model IIMGF-Net, please run:
 Test model IIMGF-Net, please run:
 
     `python test.py --config ./config/test.yaml`
-     
-
-# Contact
-For any questions, feel free to contact: `wuyli29@mail2.sysu.edu.cn`
