@@ -10,7 +10,7 @@ Indepth Integration of Multi-Granularity Features Network
         'pip install your/download/mamba/path'
 
         'pip install -e mamba-1p1p1'
-3. Download causal_conv1d 1.4.0 from [github](https://github.com/Dao-AILab/causal-conv1d/releases/tag/v1.4.0)
+3. Download causal_conv1d 1.4.0 from [github](https://github.com/Dao-AILab/causal-conv1d/releases/tag/v1.4.0) and run:
 
          'pip install your/download/causal_con1d/path'
 
