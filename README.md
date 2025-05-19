@@ -17,7 +17,7 @@ Indepth Integration of Multi-Granularity Features Network
 
 # Data Preparation
 Please at first download datasets [Derm7pt](https://derm.cs.sfu.ca/Download.html) and then download the pretrained model of 
-VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). Replace the path of the pre-trained model with the "./models/IIMGF.py".
+VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). Replace their actual storage paths in the config file.
 
      
 # Training & Testing
@@ -25,12 +25,12 @@ VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). R
 Train model IIMGF-Net, please run:
 
 
-    `python train.py --dir_release your/dataset/path --epochs 100 --batch_size 32 --learning_rate 1e-4`
+    `python main.py --config ./config/train.yaml`
 
 Test model IIMGF-Net, please run:
 
-    `python main.py --dir_release your/dataset/path ----model_path your/weight/model`
+    `python test.py --config ./config/test.yaml`
      
 
 # Contact
-For any questions, feel free to contact: `wuyli29@mail2.sysu2.edu.cn`
+For any questions, feel free to contact: `wuyli29@mail2.sysu.edu.cn`
