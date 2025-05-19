@@ -32,7 +32,7 @@ except:
     # import selective_scan_cuda_core as selective_scan_cuda
 
 
-class Cross_Mamba_Attention_SSM(nn.Module):
+class Cross_Modal_Mamba(nn.Module):
     def __init__(
             self,
             # basic dims ===========

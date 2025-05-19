@@ -1,0 +1,20 @@
+# config/IIMGF/train.yaml
+data:
+  derm7pt_path: '/home/wyl/work/data/derm7pt/release_v0'
+  batch_size: 32
+  num_workers: 4
+
+train:
+  epochs: 100
+  lr: 0.0001
+  weight_decay: 0.0001
+  seed: 42
+  train_idx: 1
+  resume: false
+
+model:
+  gpu_idx: '1'
+  pretrained_path: '/home/wyl/work/mamba_code/mamba_test/vssm1_tiny_0230s_ckpt_epoch_264.pth'
+
+output:
+  log_path: ./results
