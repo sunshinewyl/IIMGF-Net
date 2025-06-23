@@ -10,14 +10,16 @@ Indepth Integration of Multi-Granularity Features Network
         'pip install your/download/mamba/path'
 
         'pip install -e mamba-1p1p1'
-3. Download causal_conv1d 1.4.0 from [github](https://github.com/Dao-AILab/causal-conv1d/releases/tag/v1.4.0) and run:
+3. Download causal_conv1d 1.4.0 from [github](https://github.com/Dao-AILab/causal-conv1d/releases/tag/v1.4.0)
 
          'pip install your/download/causal_con1d/path'
 
 
 # Data Preparation
 Please at first download datasets [Derm7pt](https://derm.cs.sfu.ca/Download.html) and then download the pretrained model of 
-VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). Replace their actual storage paths in the config file.
+VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). Replace the path of the pre-trained model with the "./models/IIMGF.py".
+
+The private dataset DECT-LNM is available for download via [Baidu Drive](https://pan.baidu.com/s/1nkbHR8IlUPoBWTv9xvZVNg?pwd=udk8)
 
      
 # Training & Testing
@@ -25,8 +27,12 @@ VMamba-Tiny on ImageNet-1k from [github](https://github.com/MzeroMiko/VMamba). R
 Train model IIMGF-Net, please run:
 
 
-    `python main.py --config ./config/train.yaml`
+    `python train.py --dir_release your/dataset/path --epochs 100 --batch_size 32 --learning_rate 1e-4`
 
 Test model IIMGF-Net, please run:
 
-    `python test.py --config ./config/test.yaml`
+    `python main.py --dir_release your/dataset/path ----model_path your/weight/model`
+     
+
+# Contact
+For any questions, feel free to contact: `wuyli29@mail2.sysu2.edu.cn`
