@@ -34,5 +34,6 @@ Test model IIMGF-Net, please run:
     `python main.py --dir_release your/dataset/path ----model_path your/weight/model`
      
 
-# Contact
-For any questions, feel free to contact: `wuyli29@mail2.sysu2.edu.cn`
+[//]: # (# Contact)
+
+[//]: # (For any questions, feel free to contact: `wuyli29@mail2.sysu2.edu.cn`)
